@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kelompok Pelanggaran"
+        android:id="@+id/kelompok_pelanggaran"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pribadi"
+        android:id="@+id/pribadi"
+        android:checked="false"
+        android:layout_above="@+id/publik"
+        android:layout_toRightOf="@+id/kelompok_pelanggaran"
+        android:layout_toEndOf="@+id/kelompok_pelanggaran" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publik"
+        android:id="@+id/publik"
+        android:checked="false"
+        android:layout_below="@+id/kelompok_pelanggaran"
+        android:layout_alignRight="@+id/pribadi"
+        android:layout_alignEnd="@+id/pribadi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jenis Pelanggaran"
+        android:id="@+id/jenis_pelanggaran"
+        android:layout_below="@+id/penipuan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Penipuan"
+        android:id="@+id/penipuan"
+        android:layout_below="@+id/publik"
+        android:layout_alignLeft="@+id/publik"
+        android:layout_alignStart="@+id/publik"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pelanggaran Lantas"
+        android:id="@+id/pelanggaran_lantas"
+        android:layout_below="@+id/penipuan"
+        android:layout_alignLeft="@+id/penipuan"
+        android:layout_alignStart="@+id/penipuan"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rampok, Jambret, dll"
+        android:id="@+id/rampok"
+        android:layout_below="@+id/pelanggaran_lantas"
+        android:layout_alignLeft="@+id/pelanggaran_lantas"
+        android:layout_alignStart="@+id/pelanggaran_lantas"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Data Pelapor"
+        android:id="@+id/data_pelapor"
+        android:layout_alignBottom="@+id/nama_pelapor"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/kelompok_pelanggaran"
+        android:layout_toEndOf="@+id/kelompok_pelanggaran"
+        android:layout_above="@+id/penipuan"
+        android:layout_alignTop="@+id/pribadi"
+        android:id="@+id/kelompok_pelanggaran_radio_grup"></RadioGroup>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/publik"
+        android:layout_alignLeft="@+id/kelompok_pelanggaran_radio_grup"
+        android:layout_alignStart="@+id/kelompok_pelanggaran_radio_grup"
+        android:layout_alignBottom="@+id/rampok"
+        android:id="@+id/jenis_pelanggaran_radio_grup"></RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Nama Pelapor"
+        android:ems="10"
+        android:id="@+id/nama_pelapor"
+        android:layout_below="@+id/rampok"
+        android:layout_alignLeft="@+id/jenis_pelanggaran_radio_grup"
+        android:layout_alignStart="@+id/jenis_pelanggaran_radio_grup" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alamat"
+        android:text="Alamat"
+        android:layout_above="@+id/no_telp"
+        android:layout_alignLeft="@+id/no_telp"
+        android:layout_alignStart="@+id/no_telp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/no_telp"
+        android:text="No Telp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/deskripsi"
+        android:layout_alignStart="@+id/deskripsi" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/deskripsi"
+        android:layout_below="@+id/no_telp"
+        android:layout_alignLeft="@+id/nama_pelapor"
+        android:layout_alignStart="@+id/nama_pelapor"
+        android:text="Deskripsi Pelaporan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bukti"
+        android:id="@+id/bukti"
+        android:layout_below="@+id/deskripsi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_bukti"
+        android:layout_below="@+id/bukti"
+        android:layout_alignLeft="@+id/rampok"
+        android:layout_alignStart="@+id/rampok" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_below="@+id/img_bukti"
+        android:layout_alignRight="@+id/pelanggaran_lantas"
+        android:layout_alignEnd="@+id/pelanggaran_lantas" />
+
+</RelativeLayout>
