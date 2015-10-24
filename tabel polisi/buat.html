@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Sticky Table Headers Revisited | Demo 1</title>
+		<meta name="description" content="Sticky Table Headers Revisited: Creating functional and flexible sticky table headers" />
+		<meta name="keywords" content="Sticky Table Headers Revisited" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<style type="text/css">
+		/* CSS Pop Up Button*/
+		#popup{visibility:hidden;opacity:0;margin-top:-200px;}
+		#popup:target{visibility:visible;opacity:1;background-color:rgba(255,255,255,0.7);position:fixed;top:0;left:0;right:0;bottom:0;margin:0;z-index:999;-webkit-transition:all 1s;-moz-transition:all 1s;transition:all 1s}
+		@media (min-width:768px){.popup-container{width:300px}}
+		@media (max-width:767px){.popup-container{width:90%}}
+		.popup-container{position:relative;margin:7% auto;padding:15px 30px;background-color:#8dbb90;color:#fff;border-radius:3px;line-height:normal;font-size:130%;width:30%;border:5px solid #fff;box-shadow:0 0 10px rgba(0,0,0,.15);}
+		a.popup-close{position:absolute;top:-3px;right:-3px;background-color:#fff;padding:7px 10px;font-size:20px;text-decoration:none;line-height:1;color:#333;border-bottom-left-radius:3px;}
+		a.popup-close:hover{border-radius:3px;transform:scale(1.5)}
+
+		#popup2{visibility:hidden;opacity:0;margin-top:-200px;}
+		#popup2:target{visibility:visible;opacity:1;background-color:rgba(255,255,255,0.7);position:fixed;top:0;left:0;right:0;bottom:0;margin:0;z-index:999;-webkit-transition:all 1s;-moz-transition:all 1s;transition:all 1s}
+		@media (min-width:768px){.popup-container{width:300px}}
+		@media (max-width:767px){.popup-container{width:90%}}
+		.popup-container{position:relative;margin:7% auto;padding:15px 30px;background-color:#8dbb90;color:#fff;border-radius:3px;line-height:normal;font-size:130%;width:30%;border:5px solid #fff;box-shadow:0 0 10px rgba(0,0,0,.15);}
+		a.popup-close{position:absolute;top:-3px;right:-3px;background-color:#fff;padding:7px 10px;font-size:20px;text-decoration:none;line-height:1;color:#333;border-bottom-left-radius:3px;}
+		a.popup-close:hover{border-radius:3px;transform:scale(1.5)}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="index.html"><span>Kembali Ke Daftar</span></a>
+				<!-- <span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/?p=18116"><span>Back to the Codrops Article</span></a></span> -->
+			</div>
+			<header>
+				<h1>Data Pelapor Online Kepolisian Daerah Jawa Barat
+				<span><B>User</B> : KPS01991 <br /><B>Last Login</B> : 21/10/2015</span>
+				</h1>
+				<!-- <nav class="codrops-demos">
+					<a class="current-demo" href="index.html" title="Basic Usage">Basic Usage</a>
+					<a href="index2.html" title="Biaxial Headers">Biaxial Headers</a>
+					<a href="index3.html" title="Wide Tables">Wide Tables</a>
+				</nav> -->
+			</header>
+			<div class="component">
+				<!-- <h2>Tanggal Status : 24/09/2015</h2> -->
+				<p><b>Update Terakhir : 24/10/2015</b></p>
+				
+				<table>
+					<thead>
+						<tr>
+							<td width="15%">Nomor Surat</td>
+							<td width="1%">:</td>
+							<td>4346/B/V/2015/SEK.MP</td>
+						</tr>
+						<tr>
+							<td width="15%">Surat Keterangan Kepolisian</td>
+							<td width="1%">:</td>
+							<td><a href="#popup2">Lihat Surat<a></td>
+						</tr>
+						<tr>
+							<td width="15%">Tanggal Surat</td>
+							<td width="1%">:</td>
+							<td>25/10/2015</td>
+						</tr>
+					</thead>
+				</table>
+				<nav class="codrops-demos">
+					<a class="codrops-icon codrops-icon-prev" href="valid.html" title="Biaxial Headers">Kembali Ke Detail Laporan</a>
+					<a href="#popup" class="popup-link" title="Biaxial Headers">Kirim Surat Keterangan Ke Pelapor</a>
+					<div class="popup-wrapper" id="popup">
+					<div class="popup-container">
+					<!-- Konten popup, silahkan ganti sesuai kebutuhan -->
+
+					Surat Keterangan Laporan Berhasil Terkirim
+					<a href="index.html" title="Biaxial Headers">OK</a>
+
+					<!-- Konten popup sampai disini-->
+					<a class='popup-close' href='#closed'>X</a>
+					</div>
+					</div>	
+				</nav>
+
+				<div class="popup-wrapper" id="popup2">
+					<div class="popup-container">
+					<!-- Konten popup, silahkan ganti sesuai kebutuhan -->
+
+					<img src="suratnya.jpg" width="100%" heigth="100%"></img>
+
+					<!-- Konten popup sampai disini-->
+					<a class='popup-close' href='#closed'>X</a>
+				</div>
+				</div>	
+				
+				
+		</div><!-- /container -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
+		<script src="js/jquery.stickyheader.js"></script>
+	</body>
+</html>
