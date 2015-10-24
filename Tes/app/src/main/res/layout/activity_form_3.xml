@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#C0A172">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kelompok Pelanggaran"
+        android:id="@+id/kel_pel_konf"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jenis Pelanggaran"
+        android:id="@+id/jenis_pel_konf"
+        android:layout_below="@+id/isi_kelompok"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isi_kelompok"
+        android:layout_alignRight="@+id/isi_jenpel"
+        android:layout_alignEnd="@+id/isi_jenpel"
+        android:layout_alignTop="@+id/kel_pel_konf"
+        android:layout_alignLeft="@+id/isi_jenpel"
+        android:layout_alignStart="@+id/isi_jenpel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isi_jenpel"
+        android:layout_alignTop="@+id/jenis_pel_konf"
+        android:layout_toRightOf="@+id/isi_jenis_kelamin_text"
+        android:layout_alignBottom="@+id/jenis_pel_konf"
+        android:layout_alignRight="@+id/kirim_button"
+        android:layout_alignEnd="@+id/kirim_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No Laporan"
+        android:id="@+id/no_laporan_text"
+        android:layout_below="@+id/jenis_pel_konf"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="JB_09012"
+        android:id="@+id/isi_no_lap_text"
+        android:layout_alignTop="@+id/no_laporan_text"
+        android:layout_toRightOf="@+id/jenis_pel_konf"
+        android:layout_toEndOf="@+id/jenis_pel_konf" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No KTP"
+        android:id="@+id/no_ktp_text"
+        android:layout_below="@+id/no_laporan_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="321189182912"
+        android:id="@+id/isi_no_ktp_text"
+        android:layout_alignTop="@+id/no_ktp_text"
+        android:layout_alignLeft="@+id/isi_no_lap_text"
+        android:layout_alignStart="@+id/isi_no_lap_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nama"
+        android:id="@+id/nama_text"
+        android:layout_below="@+id/no_ktp_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Cecep Gorbacep"
+        android:id="@+id/isi_nama_text"
+        android:layout_below="@+id/isi_no_ktp_text"
+        android:layout_alignLeft="@+id/isi_no_ktp_text"
+        android:layout_alignStart="@+id/isi_no_ktp_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Alamat"
+        android:id="@+id/alamat_text"
+        android:layout_below="@+id/jenis_kelamin_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jl.Adisuren No 3 Bandung"
+        android:id="@+id/textView3"
+        android:layout_alignTop="@+id/alamat_text"
+        android:layout_alignLeft="@+id/isi_nama_text"
+        android:layout_alignStart="@+id/isi_nama_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jenis Kelamin"
+        android:id="@+id/jenis_kelamin_text"
+        android:layout_below="@+id/ttl_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Laki-laki"
+        android:id="@+id/isi_jenis_kelamin_text"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tempat/Tgl Lahir"
+        android:id="@+id/ttl_text"
+        android:layout_below="@+id/nama_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bandung, 1 Juli 1991"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/isi_nama_text"
+        android:layout_alignLeft="@+id/isi_nama_text"
+        android:layout_alignStart="@+id/isi_nama_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kronologi"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/isi_kronologi"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/isi_kronologi"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="26dp"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Bukti"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/isi_kronologi"
+        android:layout_alignStart="@+id/isi_kronologi" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/kembali_edit_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kirim"
+        android:id="@+id/kirim_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/editText3"
+        android:layout_toEndOf="@+id/editText3"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>

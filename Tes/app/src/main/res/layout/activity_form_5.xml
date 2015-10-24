@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#C0A172">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Status Laporan"
+        android:id="@+id/status_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="No Laporan"
+        android:id="@+id/no_laporan_text"
+        android:layout_below="@+id/status_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="49dp"
+        android:layout_marginLeft="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tgl "
+        android:id="@+id/tgl_text"
+        android:layout_alignTop="@+id/no_laporan_text"
+        android:layout_alignLeft="@+id/status_text"
+        android:layout_alignStart="@+id/status_text"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Status"
+        android:id="@+id/status_judul_text"
+        android:layout_alignTop="@+id/tgl_text"
+        android:layout_toRightOf="@+id/status_text"
+        android:layout_toEndOf="@+id/status_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="JB_09012"
+        android:id="@+id/jb_text"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/no_laporan_text"
+        android:layout_alignStart="@+id/no_laporan_text"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="24/10/2015"
+        android:id="@+id/tgl_isian_text"
+        android:layout_alignBottom="@+id/jb_text"
+        android:layout_toRightOf="@+id/no_laporan_text"
+        android:layout_toEndOf="@+id/no_laporan_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Diterima"
+        android:id="@+id/diterima_text"
+        android:layout_alignTop="@+id/tgl_isian_text"
+        android:layout_toRightOf="@+id/status_text"
+        android:layout_toEndOf="@+id/status_text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kembali"
+        android:id="@+id/kembali_home_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp" />
+</RelativeLayout>
